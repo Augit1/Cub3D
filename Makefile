@@ -41,8 +41,10 @@ SRC			=	$(SRC_DIR)/main.c \
 				$(SRC_DIR)/initialisation/init_display.c \
 				$(SRC_DIR)/initialisation/init_game.c \
 				$(SRC_DIR)/initialisation/init_texture.c \
-				$(SRC_DIR)/initialisation/init_controls.c \
 				$(SRC_DIR)/initialisation/init_utils.c \
+				$(SRC_DIR)/controls/controls_keys.c \
+				$(SRC_DIR)/controls/controls_move.c \
+				$(SRC_DIR)/controls/controls_rotate.c \
 				$(SRC_DIR)/raycasting/raycasting.c \
 				$(SRC_DIR)/raycasting/raycasting_maths.c \
 				$(SRC_DIR)/raycasting/raycasting_utils.c \
@@ -86,4 +88,4 @@ fclean: clean
 re: fclean all
 
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re mlx

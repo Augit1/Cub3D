@@ -6,7 +6,7 @@
 /*   By: aude-la- <aude-la-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 13:07:20 by aude-la-          #+#    #+#             */
-/*   Updated: 2024/12/05 18:58:15 by aude-la-         ###   ########.fr       */
+/*   Updated: 2025/02/13 18:03:09 by aude-la-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 # endif
 
 # include <mlx.h>
-# include "keys.h"
 # include "raycasting.h"
+# include "controls.h"
 # include "cube.h"
 
 typedef struct s_data
@@ -56,13 +56,6 @@ void	init_game(t_data *data, t_config *config);
 void	load_textures(t_data *data);
 void	get_texture_addr(t_data *data);
 void	handle_texture_error(t_data *data);
-
-// init_controls.c
-void	rotate_right(t_data *data, double rot_speed);
-void	rotate_left(t_data *data, double rot_speed);
-void	move_forward(t_data *data, double move_speed);
-void	move_backward(t_data *data, double move_speed);
-int		key_hook(int keycode, t_data *data);
 
 // init_utils.c
 int		init_errors(t_error type, void **ptr);
